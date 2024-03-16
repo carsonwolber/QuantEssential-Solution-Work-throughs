@@ -1,6 +1,3 @@
-# QuantEssential-Solution-Work-throughs
-This is my attempt to document and meticulously explain my solutions to the free blind 75 questions on [QuantEssentials.io.](https://quantessential.io/problems)
-
 # Brainteasers
 ## 18 Sides
 ### Problem: There is a fair 18-sided die where each side is either a 6 or a 3. The expected value of a roll is 4. How many 6s are on the 18-sided die?
