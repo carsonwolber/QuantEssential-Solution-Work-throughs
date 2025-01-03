@@ -24,7 +24,10 @@ So our answer is **6** 6's.
 ### Problem: Find the probability that a randomly selected integer from the set of positive divisors of $10^99$ is divisible by $10^80$
 
 1. What is the question asking for? A probability, or for our sake the ratio of positive divisors of $10^99$ divisible by $10^80$ to positive divisors of $10^99$. So to solve this problem, we'll have to reason about divisors for $10^n$ generally.
-2. What do we know? This question may not be as applicable in something as rote as this question, but it can still be a useful opportunity to lay out some facts. I first considered the raw cardinality of divisors, which is important to act as our denominator in the ratio. Consider that any $10^n$ can be factored into $(2*5)^n = 2^n * 5^n$. Any divisor of $10^n$ can be written as $2^m * 5^\ell$ for $m,\ell \in [0, n]$ which yields $(n+1)(n+1) = (n+1)^2$ total divisors. So $10^99$ has $100^2$ divisors.  
+2. What do we know? This question may not be as applicable in something as rote as this question, but it can still be a useful opportunity to lay out some facts. I first considered the raw cardinality of divisors, which is important to act as our denominator in the ratio. Consider that any $10^n$ can be factored into $(2*5)^n = 2^n * 5^n$. Any divisor of $10^n$ can be written as $2^m * 5^\ell$ for $m,\ell \in [0, n]$ which yields $(n+1)(n+1) = (n+1)^2$ total divisors. So $10^99$ has $100^2$ divisors.
+3. How can we use what we're given to make progress towards the desired solution? Consider what I said earlier about deriving divisor cardinality. This can be rephrased to be seen from the dividend perspective. Namely for some divisor of $10^99$ to be divisible by $10^80$, it must be able to be written as $2^k * 5^m$ where $80 ≤ k,m ≤ 99$, giving 20 different possible inputs for each $k,m$.
+
+This means we have 20^2 valid inputs, which are both divisors of $10^99$ and divisible by $10^80$. Setting this as a ratio against the $100^2$ figure found earlier, we get the desired probability is $\frac{20^2}{100^2} = 0.04$
 
 ## Cat Dog Line
 ### Problem: You're walking down an infinite street, and you notice that six out of every seven cats on a sidewalk are followed by a dog, while one out of every four dogs is followed by a cat. What proportion of animals on the sidewalk are dogs?
