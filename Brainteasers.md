@@ -14,17 +14,17 @@ The first thing you should do when solving any problem really, is to ask yoursel
 Let's solve this by first simplifying our current equation: 
 $$Ex[R] = 4 = \frac{\sum side values}{18}$$
 $$\sum side values = 72$$
-This is helpful because it basically serves as a check that we got it right. That's because as I've been hinting at, the real hint here is to recognize the ratio of 4's and 6's and that we can use any factor of 18 to get an equivalent easier example and extrapolate using that example. So let's consider a fair 3-sided die such that $Ex[R] = 4 = \frac{12}{3}$.  We're guaranteed at least one of each a 6 and 3 on our die (otherwise the expectation couldn't possibly be 4). So have 6+3 = 9 from the beginning and thus need another 3 to get that full 12. And there you have the **2:1** ratio of 3's to 6's that if we extrapolate to 18 sides gives us 12 3's and **6** 6's. We can verify this makes sense by noting 6x6 + 12x3 = 72. 
+This is helpful because it serves as a check that we got it right. That's because as I've been hinting at, the real hint here is to recognize the ratio of 4's and 6's and that we can use any factor of 18 to get an equivalent easier example and extrapolate using that example. So let's consider a fair 3-sided die such that $Ex[R] = 4 = \frac{12}{3}$.  We're guaranteed at least one of each a 6 and 3 on our die (otherwise the expectation couldn't possibly be 4). So have 6+3 = 9 from the beginning and thus need another 3 to get that full 12. And there you have the **2:1** ratio of 3's to 6's that if we extrapolate to 18 sides gives us 12 3's and **6** 6's. We can verify this makes sense by noting 6x6 + 12x3 = 72. 
 
 So our answer is **6** 6's. 
 
 
 ## Multiple Divisors
 
-### Problem: Find the probability that a randomly selected integer from the set of positive divisors of 10^99 is divisible by 10^80
+### Problem: Find the probability that a randomly selected integer from the set of positive divisors of $10^99$ is divisible by $10^80$
 
-1. What is the question asking for? A probability, or for our sake the ratio of positive divisors of 10^99 divisible by 10^80 to positive divisors of 10^99. So to solve this problem, we'll have to reason in general about divisors for 10^n.
-2. What do we know? This question may not be as applicable in something as rote as this question, but it can still be a useful opportunity to lay out some facts. I first thought to consider the raw cardinality of divisors, which is important to act as our denominator in the ratio. Consider that any $10^n$ can be factored into $(2*5)^n = 2^n * 5^n$. Any divisor of $10^n$ can be written as $2^m * 5^\ell$ for $m,\ell \in [0, n]$ which yields $(n+1)(n+1) = (n+1)^2$ total divisors. So $10^99$ has $100^2$ divisors.  
+1. What is the question asking for? A probability, or for our sake the ratio of positive divisors of $10^99$ divisible by $10^80$ to positive divisors of $10^99$. So to solve this problem, we'll have to reason about divisors for $10^n$ generally.
+2. What do we know? This question may not be as applicable in something as rote as this question, but it can still be a useful opportunity to lay out some facts. I first considered the raw cardinality of divisors, which is important to act as our denominator in the ratio. Consider that any $10^n$ can be factored into $(2*5)^n = 2^n * 5^n$. Any divisor of $10^n$ can be written as $2^m * 5^\ell$ for $m,\ell \in [0, n]$ which yields $(n+1)(n+1) = (n+1)^2$ total divisors. So $10^99$ has $100^2$ divisors.  
 
 ## Cat Dog Line
 ### Problem: You're walking down an infinite street, and you notice that six out of every seven cats on a sidewalk are followed by a dog, while one out of every four dogs is followed by a cat. What proportion of animals on the sidewalk are dogs?
